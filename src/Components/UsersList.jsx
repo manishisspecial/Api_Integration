@@ -58,7 +58,7 @@ const UsersList = ({ users }) => {
       {/* Display Users with animation */}
       <div className="transition-all duration-500 ease-in-out transform hover:scale-105">
         {users.length === 0 ? (
-          <p>No users found</p>
+          <p>No Users found</p>
         ) : (
           users.map((user) => (
             <div key={user.id} className="p-4 border border-gray-300 rounded-md shadow-md hover:bg-gray-100">
