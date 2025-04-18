@@ -24,6 +24,17 @@ Ensure your Supabase database has a `users` table with the following columns:
 - `contact_number` (text)
 - `created_at` (timestamp with time zone)
 
+## Deployment to Vercel
+
+1. Push your code to GitHub
+2. Import your repository to Vercel
+3. In Vercel's project settings:
+   - Go to "Settings" > "Environment Variables"
+   - Add a new environment variable:
+     - Name: `REACT_APP_SUPABASE_KEY`
+     - Value: Your Supabase anon/public key
+4. Deploy your project
+
 ## Available Scripts
 
 In the project directory, you can run:
