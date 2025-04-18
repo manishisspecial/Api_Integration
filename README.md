@@ -1,6 +1,28 @@
-# Getting Started with Create React App
+# Supabase User Preview App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React application connects to Supabase to display and manage user data.
+
+## Environment Setup
+
+1. Copy `.env.example` to create a new `.env` file:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Get your Supabase anon/public key:
+   - Go to [Supabase Dashboard](https://app.supabase.com)
+   - Select your project
+   - Go to Project Settings -> API
+   - Copy the `anon` `public` key
+   - Paste it in your `.env` file as the value for `REACT_APP_SUPABASE_KEY`
+
+## Database Setup
+
+Ensure your Supabase database has a `users` table with the following columns:
+- `id` (uuid, primary key)
+- `name` (text)
+- `contact_number` (text)
+- `created_at` (timestamp with time zone)
 
 ## Available Scripts
 
